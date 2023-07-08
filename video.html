@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NUBER | 投诉录音</title>
+  <style>
+    body {
+      background-color: #f5f7fa;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 300px;
+      margin: 100px auto;
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #2980b9;
+      text-align: center;
+      margin-top: 0;
+    }
+
+    .player {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .player button {
+      background-color: #2980b9;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>投诉录音</h1>
+    <div class="player">
+      <button onclick="playSound()">播放</button>
+    </div>
+  </div>
+
+  <audio id="audioPlayer">
+    <source src="video.mp3" type="audio/mpeg">
+    您的浏览器不支持音频元素。
+  </audio>
+
+  <script>
+    function playSound() {
+      var audio = document.getElementById("audioPlayer");
+      audio.play();
+    }
+  </script>
+</body>
+</html>
